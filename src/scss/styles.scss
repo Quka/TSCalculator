@@ -1,15 +1,37 @@
-$fontColor: #0091aa;
-$colorHeading: #be4a14;
-#content  // div with id: content
-{
-    color: $fontColor;
+body {
+    font-family: 'Courier New', Courier, monospace;
 }
 
-h2
-{
-    color: $colorHeading;
+label {
+    display: block;
+    margin: 0 0 0.5rem;
+
+    input {
+        width: 6rem;
+        padding: .5rem;
+        font-size: 1.5rem;
+    }
 }
 
-h1{
-    @extend h2;
+#mathBtns {
+    input {
+        background: #7ed18c;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border: 1px solid #5db66c;
+        font-size: 1rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+}
+
+#result {
+    margin: 1rem 0 0;
+
+    span {
+        display: inline-block;
+        background: #f0f0f0;
+        padding: 1rem;
+    }
 }

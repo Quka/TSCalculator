@@ -7,9 +7,30 @@
 </head>
 
 <body>
-  <h1>Webpack - TypeScript - Scss</h1>
-  <h2>TypeScript Hello World</h2>  
-  <div id="content"></div>
+  <h1>TypeScript Calculator</h1>
+
+  <div id="wrapper">
+    
+    <label>
+      1st number
+      <input type="number" name="n1" id="n1" placeholder="number">
+    </label>
+    <label>
+      2nd number
+      <input type="number" name="n2" id="n2" placeholder="number">
+    </label>
+
+    <div id="mathBtns">
+      <input class="mathBtns" type="submit" value="+" id="add">
+      <input class="mathBtns" type="submit" value="-" id="sub">
+      <input class="mathBtns" type="submit" value="*" id="multi">
+      <input class="mathBtns" type="submit" value="/" id="div">
+    </div>
+
+    <div id="result">
+      Result: <span id="result-span">0</span>
+    </div>
+  </div>
     
   <script src="bundle.js"></script>
 </body>
